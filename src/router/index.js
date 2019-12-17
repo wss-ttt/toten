@@ -27,6 +27,9 @@ const router = new Router({
     {
       path: '/user',
       name: 'User',
+      /*meta:{
+        requireAuth:true     // 表示需要登录才能进入的
+      },*/
       component: User
     },
     {

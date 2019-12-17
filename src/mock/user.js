@@ -19,8 +19,6 @@ export function login() {
     'token': Mock.Random.string('abcdefghijklmnopqrstuvwxyz0123456789', 32)
   }
 }
-
-
 // 返回所有的数据接口
 export function list(){
 	return {
@@ -29,10 +27,6 @@ export function list(){
 		data:dataList
 	}
 }
-
-
-
-
 // 登录接口
 Mock.mock('/sys/login','post',login)
 Mock.mock('/sys/user/list','get',list)  // 模拟返回所有的数据接口
